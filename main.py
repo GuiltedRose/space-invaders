@@ -2,8 +2,8 @@ import pygame
 
 pygame.init()
 
-background_color = (254, 255, 255)
-(width, height) = (200, 200)
+background_color = (0, 0, 0)
+(width, height) = (500, 500)
 pygame.display.set_caption('Space Invaders!')
 screen = pygame.display.set_mode((width, height))
 screen.fill(background_color)
@@ -19,7 +19,6 @@ running = True
 playerSprite = pygame.image.load('src/player.png')
 
 def player(x,y):
-	screen.fill(background_color)
 	screen.blit(playerSprite, (x,y))
 	pygame.display.update()
 	tick.tick(60)
